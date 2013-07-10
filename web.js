@@ -7,8 +7,9 @@ app.get('/', function(request, response) {
   if (err) throw err;
   var buffer = new Buffer(data,"ascii");
 
-  response.send(buffer.toString("ascii");
+  response.send(buffer.toString("ascii"));
 }
+);
 });
 
 var port = process.env.PORT || 5000;
